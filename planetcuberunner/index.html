@@ -1,67 +1,132 @@
-
 <!DOCTYPE html>
 <html lang="en">
-<head>
-	<meta charset="UTF-8">
-	<title>PlanetCube Runner</title>
-	<meta http-equiv="content-type" content="text/html; charset=utf-8" />
-	<meta name="title" content="PlanetCube Runner App" />
-	<meta name="description" content="" />
-	<meta name="keywords" content="Cube Runner, planet cube runner, game, ios" />
-	
-	<meta property="og:url" content="http://allthewebcams.squareheads.io"/>
-	<meta property="og:title" content="PlanetCube Runner App"/> 
-	<meta property="og:type" content="website"/> 
-	<meta property="og:image" content="img/fbPostIcon.jpg"/> 
-	<meta property="og:site_name" content="effectivecode.co.uk/planetcuberunner"/> 
-	<meta property="og:description" content=""/>
-	<meta name="viewport" content="initial-scale=1,minimum-scale=1,width=device-width">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Planet Cube Runner - A Space Adventure Game</title>
+    <link rel="stylesheet" href="stylesheets/css/styles.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+    />
+    <meta
+      name="description"
+      content="Navigate through space, dodge obstacles, and collect power-ups in this addictive endless runner game."
+    />
+    <meta
+      property="og:title"
+      content="Planet Cube Runner - A Space Adventure Game"
+    />
+    <meta
+      property="og:description"
+      content="Navigate through space, dodge obstacles, and collect power-ups in this addictive endless runner game."
+    />
+    <meta property="og:image" content="img/social-preview.jpg" />
+    <meta
+      property="og:url"
+      content="https://effectivecode.co.uk/planetcuberunner"
+    />
+  </head>
+  <body>
+    <div class="stars"></div>
+    <div class="container">
+      <header>
+        <div class="hero">
+          <img
+            src="img/logo@2x.png"
+            alt="Planet Cube Runner Logo"
+            class="game-logo"
+          />
+          <h1>Planet Cube Runner</h1>
+          <p class="tagline">Navigate the Cosmic Maze</p>
+          <div class="cta-button">
+            <a
+              href="https://itunes.apple.com/us/app/planetcube-runner/id1035460114?ls=1&mt=8"
+              class="app-store-button"
+            >
+              <img src="img/appStore@2x.png" alt="Download on the App Store" />
+            </a>
+          </div>
+        </div>
+      </header>
 
-	<!-- javascript -->
-	<script type="text/javascript" src="js/jquery-2.1.3.min.js"></script>
-	<script type="text/javascript" src="js/jquery.twentytwenty.js"></script>
-	<script type="text/javascript" src="js/jquery.event.move.js"></script>
-	<!-- Styles -->
-	<link rel="stylesheet" type="text/css" href="stylesheets/css/app.css">
+      <main>
+        <section class="features">
+          <h2>Game Features</h2>
+          <div class="features-grid">
+            <div class="feature">
+              <i class="fas fa-infinity"></i>
+              <h3>Endless Adventure</h3>
+              <p>
+                Run through an infinite cosmic maze with increasing challenges
+              </p>
+            </div>
+            <div class="feature">
+              <i class="fas fa-bolt"></i>
+              <h3>Power-Ups</h3>
+              <p>Collect special abilities and boost your running powers</p>
+            </div>
+            <div class="feature">
+              <i class="fas fa-trophy"></i>
+              <h3>Global Rankings</h3>
+              <p>Compete with players worldwide for the top spot</p>
+            </div>
+            <div class="feature">
+              <i class="fas fa-palette"></i>
+              <h3>Unique Visuals</h3>
+              <p>Experience stunning space-themed graphics and effects</p>
+            </div>
+          </div>
+        </section>
 
-<script>
-  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
-  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
-  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
-  })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+        <section class="gameplay">
+          <h2>Gameplay</h2>
+          <div class="screenshots">
+            <img
+              src="img/screenshot1.jpg"
+              alt="Planet Cube Runner Gameplay"
+              class="screenshot"
+            />
+            <img
+              src="img/screenshot2.jpg"
+              alt="Planet Cube Runner Power-ups"
+              class="screenshot"
+            />
+            <img
+              src="img/screenshot3.jpg"
+              alt="Planet Cube Runner Obstacles"
+              class="screenshot"
+            />
+          </div>
+        </section>
 
-  ga('create', 'UA-67194518-1', 'auto');
-  ga('send', 'pageview');
+        <section class="how-to-play">
+          <h2>How to Play</h2>
+          <div class="instructions">
+            <div class="instruction">
+              <i class="fas fa-hand-point-up"></i>
+              <p>Tap to jump</p>
+            </div>
+            <div class="instruction">
+              <i class="fas fa-arrows-left-right"></i>
+              <p>Swipe to move sideways</p>
+            </div>
+            <div class="instruction">
+              <i class="fas fa-gem"></i>
+              <p>Collect power-ups</p>
+            </div>
+          </div>
+        </section>
+      </main>
 
-</script>
-
-</head>
-<body>
-	<div id="bg">
-  		<img src="img/spacerunnerbackground.png" alt="">
-	</div>
-	<header>
-		<div class="intro-wrapper-outer wrapper">
-			<div class="intro-wrapper wrapper clear">
-				<div class="container clear">
-					<div class="grid wrap gm">
-						<div class="unit w-2-3">
-							<div class="gl">
-							<h1 class="h1 fsxl white bold">
-								<img class="mainLogo" src="img/logo@2x.png" height="78px" width="78px" /> 
-								Planet Cube Runner 
-							</h1>
-							<h2 class="fsm semibold gray gsm">A Spaceddictive Game.</h2>
-							<div class="pts">
-								<a href="https://itunes.apple.com/us/app/planetcube-runner/id1035460114?ls=1&mt=8"><img src="img/appStore@2x.png" height="86px" width="224px" / ></a>
-							</div> <!-- pts -->
-							</div>
-						</div><!-- unit-->
-				</div><!-- container clear -->
-			</div><!-- intro wrapper -->
-		</div><!-- intro wrapper outer -->
-	</header>
-</body>
-
-
+      <footer>
+        <p>&copy; 2024 Effective Code Ltd. All rights reserved.</p>
+        <div class="social-links">
+          <a href="#" class="social-link"><i class="fab fa-twitter"></i></a>
+          <a href="#" class="social-link"><i class="fab fa-facebook"></i></a>
+          <a href="#" class="social-link"><i class="fab fa-instagram"></i></a>
+        </div>
+      </footer>
+    </div>
+  </body>
 </html>
