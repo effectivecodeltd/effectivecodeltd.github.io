@@ -291,8 +291,9 @@ section { position: relative; }
 .about-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 1px; margin-top: clamp(44px,6vh,80px); background: var(--line); border: 1px solid var(--line); border-radius: 20px; overflow: hidden; }
 .person { background: var(--paper); padding: clamp(26px,3vw,46px); }
 .portrait {
-  position: relative; aspect-ratio: 4/5; border-radius: 14px; overflow: hidden;
-  background: var(--ink); margin-bottom: 28px;
+  position: relative; width: clamp(112px, 13vw, 152px); aspect-ratio: 1/1;
+  border-radius: 16px; overflow: hidden;
+  background: var(--ink); margin-bottom: 26px;
 }
 .portrait img {
   width: 100%; height: 100%; object-fit: cover; object-position: center top;
