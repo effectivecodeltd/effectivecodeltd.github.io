@@ -121,14 +121,7 @@ h1, h2, h3 { font-family: var(--fk); font-optical-sizing: auto; font-weight: 460
   padding-block: 12px;
 }
 .brand { display: flex; align-items: center; gap: .6em; font-weight: 600; letter-spacing: -0.02em; font-size: 1.06rem; }
-.brand .mark {
-  width: 28px; height: 28px; flex: none;
-  display: grid; place-items: center;
-  background: var(--flame); color: #fff;
-  border-radius: 7px;
-  font-family: var(--fk); font-weight: 600; font-size: .95rem;
-  font-style: italic;
-}
+.brand .mark { height: 24px; width: 28px; flex: none; display: block; }
 .nav-links { display: flex; align-items: center; gap: 4px; }
 .nav-links a.lnk {
   font-size: .92rem; font-weight: 480; color: var(--ink-70);
