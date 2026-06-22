@@ -329,7 +329,8 @@ section { position: relative; }
 .person .bio { color: var(--ink-70); margin-top: 16px; }
 .person .skills { display: flex; flex-wrap: wrap; gap: 7px; margin-top: 22px; }
 .person .skills span { font-size: .8rem; color: var(--ink-70); border: 1px solid var(--line); border-radius: 100px; padding: .42em .9em; }
-.person .mailto { display: inline-flex; align-items: center; gap: .5em; margin-top: 26px; font-family: var(--mo); font-size: .78rem; letter-spacing: .02em; border-bottom: 1px solid var(--line); padding-bottom: 3px; transition: color .3s, border-color .3s; }
+.person .links-row { display: flex; flex-wrap: wrap; align-items: flex-start; gap: 12px 22px; margin-top: 26px; }
+.person .mailto { display: inline-flex; align-items: center; gap: .5em; font-family: var(--mo); font-size: .78rem; letter-spacing: .02em; border-bottom: 1px solid var(--line); padding-bottom: 3px; transition: color .3s, border-color .3s; }
 .person .mailto:hover { color: var(--flame); border-color: var(--flame); }
 
 /* ============================================================
